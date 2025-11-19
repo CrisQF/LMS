@@ -1,3 +1,6 @@
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
+
 export default function CoursesPage() {
   return (
     <>
