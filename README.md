@@ -1,4 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cursos LMS
+
+Sistema de gestión de aprendizaje (LMS) moderno construido con Next.js, React, y TypeScript. Esta aplicación permite gestionar cursos en línea con autenticación segura, verificación de correo electrónico, y protección contra bots y rate limiting.
+
+## Características
+
+- 🔐 **Autenticación segura** con Better Auth
+- 📧 **Verificación de correo** con Resend y OTP
+- 🛡️ **Protección avanzada** con Arcjet (rate limiting, bot detection, email validation)
+- 🎨 **UI moderna** con shadcn/ui y Tailwind CSS
+- 🌙 **Tema oscuro/claro** con next-themes
+- ⚡ **Rendimiento optimizado** con Next.js 16
+- 🧪 **Testing** con Jest y React Testing Library
+
+## Tecnologías
+
+- **Framework**: Next.js 16
+- **Lenguaje**: TypeScript
+- **Base de datos**: PostgreSQL con Prisma
+- **Autenticación**: Better Auth
+- **UI**: shadcn/ui, Radix UI, Tailwind CSS
+- **Email**: Resend
+- **Seguridad**: Arcjet
+- **Testing**: Jest, React Testing Library
 
 ## Getting Started
 
@@ -16,9 +39,37 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Testing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run tests:
+
+```bash
+npm run test
+# or
+pnpm test
+```
+
+Run tests in watch mode:
+
+```bash
+npm run test:watch
+```
+
+Run tests with coverage:
+
+```bash
+npm run test:coverage
+```
+
+## Scripts Disponibles
+
+- `dev` - Inicia el servidor de desarrollo
+- `build` - Construye la aplicación para producción
+- `start` - Inicia el servidor de producción
+- `lint` - Ejecuta ESLint
+- `test` - Ejecuta los tests
+- `test:watch` - Ejecuta los tests en modo watch
+- `test:coverage` - Ejecuta los tests con cobertura
 
 ## Learn More
 
