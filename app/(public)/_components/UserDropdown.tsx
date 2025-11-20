@@ -35,7 +35,7 @@ export function UserDropdown({ email, name, image }: iAppProps) {
         <Button variant="ghost" className="h-auto p-0 hover:bg-transparent">
           <Avatar>
             <AvatarImage src={image} alt="Profile image" />
-            <AvatarFallback>{name[0].toUpperCase()}</AvatarFallback>
+            <AvatarFallback>{name[0].toUpperCase() || "U"}</AvatarFallback>
           </Avatar>
           <ChevronDownIcon
             size={16}
@@ -44,7 +44,7 @@ export function UserDropdown({ email, name, image }: iAppProps) {
           />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="max-w-64">
+      <DropdownMenuContent align="end" className="min-w-48">
         <DropdownMenuLabel className="flex min-w-0 flex-col">
           <span className="truncate text-sm font-medium text-foreground">
             {name}
